@@ -14,3 +14,20 @@ test_that("Run with spaces in the launcher.jar path, for Windows", {
   )
 })
 
+test_that("show commands in output when verbose is TRUE", {
+  if (!is_on_ci()) return()
+  if (!is_beast2_installed()) return()
+
+  beast2_folder <- tempfile(pattern = "beastier_")
+  beastier::install_beast2(folder_name = beast2_folder)
+
+  expect_message(
+    beastier::is_beast2_input_file(
+      filename = get_beastier_path("anthus_2_4.xml"),
+      beast2_path = get_default_beast2_bin_path(beast2_folder = beast2_folder),
+      verbose = TRUE
+    ),
+    beast2_folder
+  )
+})
+

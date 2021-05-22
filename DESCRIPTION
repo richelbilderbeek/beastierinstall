@@ -18,11 +18,14 @@ Roxygen: list(markdown = TRUE)
 RoxygenNote: 7.1.1
 Imports:
     beautier (>= 2.5.2),
-    beastier
+    beastier,
+    pryr
 Suggests:
     knitr,
     markdown,
+    rappdirs,
     rmarkdown,
+    spelling,
     testthat (>= 2.1.0)
 URL: https://github.com/richelbilderbeek/beastierinstall/
 BugReports: https://github.com/richelbilderbeek/beastierinstall

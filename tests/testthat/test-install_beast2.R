@@ -6,7 +6,7 @@ test_that("install at non-standard location", {
 
   folder_name <- tempfile()
   beast_jar_path <- file.path(folder_name, "beast", "lib", "launcher.jar")
-  testit::assert(!file.exists(beast_jar_path))
+  expect_false(file.exists(beast_jar_path))
 
   expect_message(
     install_beast2(
