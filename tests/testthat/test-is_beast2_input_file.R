@@ -19,7 +19,7 @@ test_that("show commands in output when verbose is TRUE", {
   if (!is_beast2_installed()) return()
 
   beast2_folder <- tempfile(pattern = "beastier_")
-  beastier::install_beast2(folder_name = beast2_folder)
+  beastierinstall::install_beast2(folder_name = beast2_folder)
 
   expect_message(
     beastier::is_beast2_input_file(

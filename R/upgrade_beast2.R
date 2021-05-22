@@ -17,9 +17,9 @@ upgrade_beast2 <- function(
     stop(
       "BEAST2 is not installed, so cannot upgrade.\n",
       "\n",
-      "Tip: use 'beastier::install_beast2()'"
+      "Tip: use 'beastierinstall::install_beast2()'"
     )
   }
-  beastier::uninstall_beast2()
-  beastier::install_beast2()
+  beastierinstall::uninstall_beast2()
+  beastierinstall::install_beast2()
 }

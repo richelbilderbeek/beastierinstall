@@ -1,7 +1,7 @@
 #!/bin/bash
 # Script to install pirouette and its dependencies
 # on the Peregrine computer cluster
-# 
+#
 # Usage:
 #
 # * To install master:
@@ -24,9 +24,9 @@ if [ "$#" -ne 1 ]; then
   branch=master
 fi
 
-module load GCCcore/4.9.3 
+module load GCCcore/4.9.3
 module load XZ/5.2.2-foss-2016a
 module load R
 module load ImageMagick
-Rscript -e "devtools::install_github(\"ropensci/beastier\", ref = \"$branch\")" 
-Rscript -e 'if (!beastier::is_beast2_installed()) beastier::install_beast2()'
+Rscript -e "devtools::install_github(\"ropensci/beastier\", ref = \"$branch\")"
+Rscript -e 'if (!beastier::is_beast2_installed()) beastierinstall::install_beast2()'
