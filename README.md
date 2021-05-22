@@ -10,3 +10,11 @@ Branch   |[GitHub Actions](https://github.com/ropensci/beastierinstall/actions) 
 `beastierinstall` is a non-CRAN extension of [`beastier`](https://github.com/ropensci/beastier),
 a CRAN package to run BEAST2.
 
+## Example
+
+```
+library(beastierinstall)
+install_beast2()
+uninstall_beast2()
+```
+
