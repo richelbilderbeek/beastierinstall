@@ -1,0 +1,43 @@
+Package: beastierinstall
+Title: Installs BEAST2 For Beastier
+Version: 0.1
+Authors@R: c(
+    person("Richèl J.C.", "Bilderbeek", email = "richel@richelbilderbeek.nl", role = c("aut", "cre"), comment = c(ORCID = "0000-0003-1107-7049")))
+Maintainer: Richèl J.C. Bilderbeek <richel@richelbilderbeek.nl>
+Description: 'BEAST2' (<https://www.beast2.org>) is a widely used
+    Bayesian phylogenetic tool, that uses DNA/RNA/protein data
+    and many model priors to create a posterior of jointly estimated 
+    phylogenies and parameters.
+    'BEAST2' is a command-line tool.
+    This package is an extension of the beastier package
+    to install and uninstall 'BEAST2' 
+    from an 'R' function call.
+License: GPL-3
+Encoding: UTF-8
+LazyData: true
+Roxygen: list(markdown = TRUE)
+RoxygenNote: 7.1.1
+Imports:
+    beautier (>= 2.5),
+    devtools,
+    rappdirs,
+    readr,
+    remotes,
+    rJava,
+    stringr,
+    xml2
+Suggests:
+    hunspell,
+    knitr,
+    markdown,
+    rmarkdown,
+    spelling,
+    testit,
+    testthat (>= 2.1.0),
+    tracerer
+URL: https://github.com/richelbilderbeek/beastierinstall/
+BugReports: https://github.com/richelbilderbeek/beastierinstall
+Language: en-US
+VignetteBuilder: knitr
+SystemRequirements: BEAST2 (https://www.beast2.org/)
+
