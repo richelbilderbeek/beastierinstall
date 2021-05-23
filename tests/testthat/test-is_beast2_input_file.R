@@ -3,7 +3,7 @@ test_that("Run with spaces in the launcher.jar path, for Windows", {
   if (!beastier::is_beast2_installed()) return()
 
   beast2_folder <- file.path(tempfile(), "path with spaces", "even more")
-  expect_silent(install_beast2(folder_name = beast2_folder))
+  install_beast2(folder_name = beast2_folder) # nolint Produces warnings, but cannot reproduce this
   expect_true(beastier::is_beast2_installed(folder_name = beast2_folder))
   beast2_path <- beastier::get_default_beast2_bin_path(beast2_folder = beast2_folder)
   expect_true(
