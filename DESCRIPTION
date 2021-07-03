@@ -19,7 +19,8 @@ RoxygenNote: 7.1.1
 Imports:
     beautier (>= 2.5.2),
     beastier,
-    pryr
+    pryr,
+    readr
 Suggests:
     knitr,
     markdown,
