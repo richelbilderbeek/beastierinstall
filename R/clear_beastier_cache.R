@@ -6,7 +6,7 @@
 #' @author Richèl J.C. Bilderbeek
 #' @export
 clear_beastier_cache <- function(
-  beastier_folder = get_beastier_folder()
+  beastier_folder = beastier::get_beastier_folder()
 ) {
   dirs <- list.dirs(beastier_folder, full.names = TRUE)
   unlink(dirs, recursive = TRUE)

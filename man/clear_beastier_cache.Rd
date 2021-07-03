@@ -4,7 +4,7 @@
 \alias{clear_beastier_cache}
 \title{Clear the \link{beastier} cache}
 \usage{
-clear_beastier_cache(beastier_folder = get_beastier_folder())
+clear_beastier_cache(beastier_folder = beastier::get_beastier_folder())
 }
 \value{
 Nothing.
