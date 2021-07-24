@@ -14,7 +14,7 @@ jobs:
       fail-fast: false
       matrix:
         install_beast2: [true, false]
-        os: [ubuntu-latest, macos-latest, windows-latest]
+        os: [ubuntu-latest]
 
     runs-on: ubuntu-latest
     env:
@@ -37,7 +37,8 @@ jobs:
         run: |
           install.packages(c("remotes", "rcmdcheck"))
           remotes::install_deps(dependencies = TRUE)
-          remotes::install_github("ropensci/beastier", ref = "develop")
+          remotes::install_github("ropensci/beautier")
+          remotes::install_github("ropensci/beastier")
           remotes::install_cran("rcmdcheck")
           remotes::install_cran("covr")
           remotes::install_cran("lintr")
