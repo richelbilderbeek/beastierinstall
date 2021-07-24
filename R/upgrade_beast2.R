@@ -9,6 +9,7 @@
 #'   The name of the BEAST2 jar file will be at
 #'   \code{[folder_name]/beast/lib/launcher.jar}
 #' @author Richèl J.C. Bilderbeek
+#' @export
 upgrade_beast2 <- function(
   folder_name = rappdirs::user_data_dir(),
   os = rappdirs::app_dir()$os
