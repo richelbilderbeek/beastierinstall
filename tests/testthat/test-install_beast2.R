@@ -1,7 +1,6 @@
 test_that("install at non-standard location", {
 
   if (!beastier::is_on_ci()) return()
-  if (rappdirs::app_dir()$os == "mac") return()
 
   folder_name <- tempfile()
   beast_jar_path <- file.path(folder_name, "beast", "lib", "launcher.jar")
@@ -21,7 +20,6 @@ test_that("install at non-standard location", {
 test_that("install twice must throw", {
 
   if (!beastier::is_on_ci()) return()
-  if (rappdirs::app_dir()$os == "mac") return()
 
   folder_name <- tempfile()
   if (!beastier::is_beast2_installed(folder_name = folder_name)) {
@@ -36,8 +34,6 @@ test_that("install twice must throw", {
 test_that("install at non-standard location with first version", {
 
   if (!beastier::is_on_ci()) return()
-  if (rappdirs::app_dir()$os == "mac") return()
-
 
   folder_name <- tempfile()
   beast_jar_path <- file.path(folder_name, "beast", "lib", "launcher.jar")
@@ -51,7 +47,7 @@ test_that("install at non-standard location with first version", {
 test_that("install at non-standard location with v2.6.2", {
 
   if (!beastier::is_on_ci()) return()
-  if (rappdirs::app_dir()$os == "mac") return()
+
   folder_name <- tempfile()
   beast2_version <- "2.6.2"
   install_beast2(folder_name, beast2_version = beast2_version)
@@ -62,7 +58,6 @@ test_that("install at non-standard location with v2.6.2", {
 test_that("install must be silent", {
 
   if (!beastier::is_on_ci()) return()
-  if (rappdirs::app_dir()$os == "mac") return()
 
   folder_name <- tempfile(pattern = "beastier")
   expect_silent(install_beast2(folder_name = folder_name))
@@ -71,7 +66,6 @@ test_that("install must be silent", {
 test_that("install can be verbose", {
 
   if (!beastier::is_on_ci()) return()
-  if (rappdirs::app_dir()$os == "mac") return()
 
   folder_name <- tempfile(pattern = "beastier")
   expect_message(
@@ -84,7 +78,6 @@ test_that("install can be verbose", {
 test_that("install at path with spaces", {
 
   if (!beastier::is_on_ci()) return()
-  if (rappdirs::app_dir()$os == "mac") return()
 
   folder_name <- file.path(tempfile(), "path with spaces", "even more")
   expect_silent(install_beast2(folder_name = folder_name))

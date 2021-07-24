@@ -9,7 +9,6 @@ test_that("uninstall absent BEAST2 must throw", {
 test_that("uninstall must be silent", {
 
   if (!beastier::is_on_ci()) return()
-  if (rappdirs::app_dir()$os == "mac") return()
 
   folder_name <- tempfile(pattern = "beastier_")
   expect_silent(install_beast2(folder_name = folder_name))
@@ -17,10 +16,9 @@ test_that("uninstall must be silent", {
   expect_true(!dir.exists(folder_name))
 })
 
-test_that("install can be verbose", {
+test_that("uninstall can be verbose", {
 
   if (!beastier::is_on_ci()) return()
-  if (rappdirs::app_dir()$os == "mac") return()
 
   folder_name <- tempfile(pattern = "beastier_")
   expect_silent(install_beast2(folder_name = folder_name))
