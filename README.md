@@ -17,4 +17,3 @@ library(beastierinstall)
 install_beast2()
 uninstall_beast2()
 ```
-
