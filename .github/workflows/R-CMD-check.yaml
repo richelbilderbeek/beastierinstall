@@ -24,6 +24,9 @@ jobs:
 
       - uses: r-lib/actions/setup-r@v1
 
+      - name: Install libharfbuzz-dev libfribidi-dev
+        run: sudo apt install -qq libharfbuzz-dev libfribidi-dev
+
       - name: Install libcurl4-openssl-dev
         run: sudo apt install -qq libcurl4-openssl-dev
 
