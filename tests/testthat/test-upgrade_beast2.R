@@ -13,7 +13,7 @@ test_that("give error when BEAST2 is not installed", {
 
   beastierinstall::uninstall_beast2()
   expect_error(
-    beastierinstall::upgrade_beast2(),
+    upgrade_beast2(),
     "BEAST2 is not installed"
   )
   beastierinstall::install_beast2()

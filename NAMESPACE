@@ -2,3 +2,4 @@
 
 export(install_beast2)
 export(uninstall_beast2)
+export(upgrade_beast2)
