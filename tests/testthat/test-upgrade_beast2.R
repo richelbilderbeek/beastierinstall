@@ -6,7 +6,7 @@ test_that("use", {
 
 
 test_that("give error when BEAST2 is not installed", {
-  if (!beastier::is_on_ci()) return()
+  if (!beautier::is_on_ci()) return()
   if (!beastier::is_beast2_installed()) return()
 
   expect_true(beastier::is_beast2_installed())

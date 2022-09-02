@@ -15,7 +15,7 @@ test_that("Run with spaces in the launcher.jar path, for Windows", {
 })
 
 test_that("show commands in output when verbose is TRUE", {
-  if (!beastier::is_on_ci()) return()
+  if (!beautier::is_on_ci()) return()
   if (!beastier::is_beast2_installed()) return()
 
   beast2_folder <- tempfile(pattern = "beastier_")
