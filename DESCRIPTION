@@ -18,7 +18,7 @@ Roxygen: list(markdown = TRUE)
 RoxygenNote: 7.2.1
 Imports:
     beautier (>= 2.6.11),
-    beastier,
+    beastier (>= 2.5),
     pryr,
     readr
 Suggests:
