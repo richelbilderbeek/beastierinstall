@@ -18,12 +18,12 @@ Roxygen: list(markdown = TRUE)
 Imports:
     beautier (>= 2.6.11),
     beastier (>= 2.5),
-    pryr,
-    readr
+    pryr
 Suggests:
     knitr,
     markdown,
     rappdirs,
+    readr,
     rmarkdown,
     spelling,
     testthat (>= 2.1.0)
