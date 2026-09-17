@@ -7,6 +7,5 @@
 #' \code{beastierinstall} in a non-CRAN extension of the
 #' \code{beastier} package. With \code{beastier} one can work with BEAST2
 #' using an R interface.
-#' @docType package
 #' @name beastierinstall
 NULL
